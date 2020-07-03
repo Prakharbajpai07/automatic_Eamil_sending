@@ -10,6 +10,6 @@ email.set_content('I am invatable')
 with smtplib.SMTP(host = 'smtp.gmail.com', port=587) as smtp:
         smtp.ehlo()
         smtp.starttls()
-        smtp.login("email", "password")
+        smtp.login("your_email_id", "password")
         smtp.send_message(email)
         print("all good boss")
